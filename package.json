@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/haukur16/haukurlab/issues"
   },
-  "homepage": "https://github.com/haukur16/haukurlab#readme"
+  "homepage": "https://github.com/haukur16/haukurlab#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }
