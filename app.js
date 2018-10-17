@@ -1,6 +1,12 @@
-const app = require("./src/api");
-const PORT = process.env.PORT || 3000;
+const express = require("express");
+const app = express();
+const api = require("./src/api");
 
-app.listen(PORT, () => {
-  console.log("Server running on port " + PORT);
+app.use("/api", api);
+
+// For any other route (URL) just send an error
+app.get("*", (req, res) => {
+  res.send({ error: "No route defined" });
 });
+
+module.exports = app;

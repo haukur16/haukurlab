@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node server",
-    "watch": "jest --watchAll", 
+    "watch": "jest --watchAll",
     "clean": "rm -rf node_modules"
   },
   "repository": {
@@ -20,9 +20,10 @@
   },
   "homepage": "https://github.com/haukur16/haukurlab#readme",
   "devDependencies": {
-    "express": "^4.16.4",
     "jest": "^23.6.0",
     "supertest": "^3.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }

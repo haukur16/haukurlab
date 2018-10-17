@@ -12,3 +12,4 @@ app.get("/greeting/:name", (req, res) => {
   // Hint: `req.params.name`
 });
 module.exports = app;
+
